@@ -86,9 +86,9 @@ Add a label of the homework with a link to the gist/repo/..etc for each homework
 
 ## Gregory Anderson
 
-* [Node Server Tutorial]()
-* [Promise Practice Exercises]()
-* [Web Scraping Workshop]()
+* [Node Server Tutorial](https://github.com/gregoryanderson/mod4)
+* [Promise Practice Exercises](https://github.com/gregoryanderson/mod4)
+* [Web Scraping Workshop](https://github.com/gregoryanderson/prework)
 
 
 ## Jacob Ogren

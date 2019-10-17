@@ -5,25 +5,27 @@
  # Basics
 
  #### Link to the GitHub Repository for the BE
-[palette-picker BE](https://github.com/shannonmoranetz/palette-picker-api)
+ 
+[palette-picker BE](https://github.com/gregoryanderson/backend-palette-picker)
 
  #### Link to the Deployed BE
-[heroku BE](https://palette-picker-api.herokuapp.com/)
+[heroku BE](https://be-palette.herokuapp.com/api/v1/folders)
 
  #### Link to the GitHub Repository for the FE
-[palette-picker FE](https://github.com/hlhartley/palette-picker)
+[palette-picker FE](https://github.com/bld010/frontend-palette-picker)
 
  #### Link to the Deployed FE
-[heroku FE](https://palit-picker.herokuapp.com/)
+[heroku FE](https://fe-palette.herokuapp.com/)
 
  ## Completion
 
  #### Were you able to complete the base functionality?
 
- Yes we were able to complete the base functionality
+Yes.
 
  #### Link to an image of your wireframe(s)
-- On GitHub FE repository
+
+![Wireframe](https://user-images.githubusercontent.com/30326085/66967545-887c5900-f03e-11e9-8d8e-15910b1b33b9.png)
 
  #### Which extensions, if any, did you complete?
  
@@ -32,35 +34,33 @@
  # Code Quality
 
  #### Link to a specific block of your code on GitHub (from either repository) that you are proud of
-[happy code](https://github.com/hlhartley/palette-picker/blob/master/src/containers/PaletteControls/PaletteControls.js)
+[happy code](https://github.com/bld010/frontend-palette-picker/blob/master/src/App.js#L29)
 
  * Why were you proud of this piece of code?  
-- Lines 30-47: generateRandomColors function. We completely refactored this function, scaled it down, and made it more efficient. We originally generated 5 random colors; however, we didn't account for locking the colors and then being able to generate additional colors to push into that array. We also had to completely restructure our data, and add a isLocked (value = bool) property.
+- Lines 29-36: This was a turning point in the project. There is a lot of heavy lifting that happens in this function and it all happens asychronously, which is a newer concept for us. This function is bundled and called a few times in the app. When this function was written and achieved we knew that we saw daylight at the end of the tunnel. Additionally, the testing of this particular function was beastly and was a great opportunity for learning.
 
  #### Link to a specific block of your code on GitHub that you feel not great about
-[sad code](https://github.com/hlhartley/palette-picker/blob/master/src/containers/ProjectCard/ProjectCard.js)
+[sad code](https://github.com/bld010/frontend-palette-picker/blob/master/src/Palettes.js#L35)
 
  * Why do you feel not awesome about the code? What challenges did you face trying to write/refactor it?
-- Lines 17-31: handleDeleteColors function. This function handles a lot. To refactor, we could have made it into a thunk and/or broken it our into separate functions.
+- Lines 35 and 39: These classNames are not doing a whole lot here. There were some complications in testing and trying to find particular elements and throwing a className on them was the cheapest and fastest way to get it done, but there is a better solution out there. Separately, our git branches and commits, turned into a bit of a tangled web.
 
  #### Link to Design Inspiration
 
- * Show us what you used as design inspiration (another color picker site, a dribbble UI element, a user flow, etc.) and explain what you stole from it  
-[design inspiration](https://dribbble.com/shots/6229834-Language-learning-iOS-app)    
-- We stole the design of the button(s). The color of the buttons really stand out and it looks really fun and modern which is the theme of our paLit picker app.
+[design inspiration](https://dribbble.com/shots/4485141-Colours-Cafe?utm_source=Clipboard_Shot&utm_campaign=Tamarashvili&utm_content=Colours.Cafe&utm_medium=Social_Share)    
+- We really enjoyed the simple circles on the palette. We took the opportunity to add them to our project via the Mini-Palette display. We thought that it would be a good juxtaposition against the rectagular palettes above. We also enjoyed the less-is-more approach to the background, which emphasizes the colors and takes nothing away.
 
  #### Reflection on New Concepts
 
  * Describe your thoughts on server-side testing  
-- It is still a bit unfamiliar, yet it seems worthwhile and not as difficult as some front-end tests can be.
+- Server-side testing went by quickly. Almost, too quick. As in, We know that we have happy and sad paths for all things, but it seems like there may need to be more tests written. 
 * Describe your thoughts on TravisCI  
-- Once you know how to set it up, it's not too difficult to use. The only drawback is that it is extremely slow and you have to wait for it to finish. TravisCI could be really useful for Continuous Integration and making sure that there are no bugs before the changes are deployed to your app.
+- The initial set-up was difficult, and we will go through the process again with future projects, but once the technology was implemented it was a great way of triple-checking production-level code.
 * Describe your thoughts in creating a single project whose codebase was distributed across multiple repositories
-- It was easier to organize and break it out into FE and BE repositories - yet have the two connected.
+- We knew that there were going to be challenges, but met those challenges with enthusiasm and curiousity. Thus, we prevailed.
 #### Please feel free to ask any other questions or make any other statements below!
 
- Anything else you wanna say!
-
+ 
  -----
 
 
